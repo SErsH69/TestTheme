@@ -1056,11 +1056,13 @@ textarea {
   visibility: hidden;
   transition: all 0.3s ease;
   padding: 16px;
+  pointer-events: none;
 }
 
 .modal.isOpened {
   opacity: 1;
   visibility: visible;
+  pointer-events: all;
 }
 
 .modal:after {
@@ -1210,6 +1212,10 @@ textarea {
   margin-top: 1.25vw;
 }
 
+.modal__form * {
+  transform: all 0.3s ease;
+}
+
 .modal__form--input {
   position: relative;
   margin-bottom: 0.8333333333vw;
@@ -1290,7 +1296,6 @@ textarea {
 
 .modal__form--custom-checkbox > span {
   color: #fff;
-  font-family: "Gilroy", sans-serif, cursive;
   font-size: 0.7291666667vw;
   font-style: normal;
   font-weight: 400;

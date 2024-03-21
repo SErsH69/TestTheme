@@ -11,9 +11,11 @@
     visibility: hidden;
     transition: all .3s ease;
     padding: 16px;
+    pointer-events: none;
     &.isOpened {
         opacity: 1;
         visibility: visible;
+        pointer-events: all;
     }
     &:after {
         content: "";
@@ -195,6 +197,9 @@
     }
     &__form {
         margin-top: vw(24);
+        * {
+            transform: all .3s ease;
+        }
         @media all and (max-width: 1023px) {
             margin-top: 24px;
         }
@@ -283,7 +288,6 @@
             }
             & > span {
                 color: #fff;
-                font-family: 'Gilroy', sans-serif, cursive;
                 font-size: vw(14);
                 font-style: normal;
                 font-weight: 400;
