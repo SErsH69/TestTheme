@@ -197,9 +197,6 @@
     }
     &__form {
         margin-top: vw(24);
-        * {
-            transform: all .3s ease;
-        }
         @media all and (max-width: 1023px) {
             margin-top: 24px;
         }

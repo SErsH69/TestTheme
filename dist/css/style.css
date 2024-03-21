@@ -1212,10 +1212,6 @@ textarea {
   margin-top: 1.25vw;
 }
 
-.modal__form * {
-  transform: all 0.3s ease;
-}
-
 .modal__form--input {
   position: relative;
   margin-bottom: 0.8333333333vw;
