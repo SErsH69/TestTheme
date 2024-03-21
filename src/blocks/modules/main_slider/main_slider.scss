@@ -145,6 +145,7 @@
         }
     }
     &__btn {
+        border: 0;
         background: #0dbc91;
         border-radius: vw(50);
         font-family: var(--font-family);
@@ -155,6 +156,7 @@
         display: inline-block;
         padding: vw(11);
         text-decoration: none;
+        cursor: pointer;
         color: #fff;
         max-width: vw(196);
         width: 100%;

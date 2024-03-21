@@ -1,13 +1,26 @@
 <div class="modal" data-modal="1">
     <div class="modal__in">
         <div class="modal__closer"></div>
-        modal 1
-    </div>
-</div>
-
-<div class="modal" data-modal="2">
-    <div class="modal__in">
-        <div class="modal__closer"></div>
-        modal 2
+        <div class="modal__title">Записаться на прием</div>
+        <form action="/login" method="POST" class="modal__form">
+            <div class="modal__form--input">
+                <input type="text" id="text" name="fio" placeholder="Имя" required>
+                <label for="text">Имя</label>
+            </div>
+            <div class="modal__form--input">
+                <input type="tel" id="tel" name="phone" placeholder="Телефон" required>
+                <label for="tel">Телефон</label>
+            </div>
+            <div class="modal__form--submit">
+                <span>Отправить</span>
+                <input type="submit" value="Отправить">
+            </div>
+        </form>
+        <div class="modal__done">
+            <div class="modal__done--icon"></div>
+            <div class="modal__done--tit">Ваша заявка принята</div>
+            <div class="modal__done--txt">В ближайшее время наш менеджер свяжется с Вами</div>
+            <div class="modal__done--btn"><span>Хорошо, вернуться на главную</span></div>
+        </div>
     </div>
 </div>
