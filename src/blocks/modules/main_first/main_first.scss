@@ -1,18 +1,20 @@
 .main_first {
     display: flex;
     background: #f8fbfa;
-    min-height: vw(533);
+    height: vw(532);
+    min-height: vw(532);
     @media all and (max-width: 1023px) {
         flex-direction: column-reverse;
+        height: unset;
         min-height: unset;
     }
     &__l-side {
-        width: 50%;
+        width: 50.5%;
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        padding-left: vw(187);
+        padding-left: vw(178);
         padding-bottom: vw(20);
         @media all and (max-width: 1023px) {
             padding: 34px 17px 53px 17px;
@@ -48,7 +50,7 @@
         }
     }
     &__r-side {
-        width: 50%;
+        width: 49.5%;
         font-size: 0;
         @media all and (max-width: 1023px) {
             width: 100%;
